@@ -737,8 +737,8 @@
 \DeclareFieldFormat[incollection]{title}{#1\par}
 
 \DeclareBibliographyDriver{article}{%
-  \fontsize{9pt}{1em}\bodyfont%
-  \printfield{title}%
+  \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
+  \printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -758,8 +758,8 @@
 }
 
 \DeclareBibliographyDriver{inproceedings}{%
-  \fontsize{9pt}{1em}\bodyfont%
-  \printfield{title}%
+  \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
+  \printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -777,8 +777,8 @@
 }
 
 \DeclareBibliographyDriver{incollection}{%
-  \fontsize{9pt}{1em}\bodyfont%
-  \printfield{title}%
+  \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
+  \printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -796,8 +796,8 @@
 }
 
 \DeclareBibliographyDriver{misc}{%
-  \fontsize{9pt}{1em}\bodyfont%
-  \printfield{title}%
+  \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
+  \printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -817,8 +817,8 @@
 }
 
 \DeclareBibliographyDriver{report}{%
-  \fontsize{9pt}{1em}\bodyfont%
-  \printfield{title}%
+  \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
+  \printfield{title}}%
   \newblock%
   \printnames{author}%
   \par%
@@ -837,7 +837,7 @@
 
 % New syntax for flexible backend (BibLaTeX > v3.3)
 \DeclareNameFormat{author}{%
-  \fontsize{9pt}{1em}\bodyfont%
+  \fontsize{8pt}{1em}\bodyfont%
   \renewcommand*{\multinamedelim}{\addcomma\addspace}%
   \nameparts{#1}%
   \ifthenelse{\value{listcount}=1}
