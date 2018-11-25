@@ -8,10 +8,15 @@
 *.out
 *.toc
 
+# xelatex files:
+*.xdv
+
+# latexmk files:
+*.fdb_latexmk
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
-<<<<<<< HEAD
 
 ### Editor ###
 ## Vim & Emacs temp files:
