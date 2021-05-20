@@ -745,6 +745,7 @@
 \DeclareFieldFormat[misc]{title}{#1\par}
 \DeclareFieldFormat[report]{title}{#1\par}
 \DeclareFieldFormat[incollection]{title}{#1\par}
+\DeclareFieldFormat[thesis]{title}{#1\par}
 
 \DeclareBibliographyDriver{article}{%
   \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
@@ -827,6 +828,25 @@
 }
 
 \DeclareBibliographyDriver{report}{%
+  \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
+  \printfield{title}}%
+  \newblock%
+  \printnames{author}%
+  \par%
+  \newblock%
+  {%
+    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \printfield{type}%
+    \setunit{\space}%
+    \printfield{number}%
+    \setunit{\addcomma\space}%
+    \printfield{year}%
+    \newunit%
+  }
+  \par\vspace{0.3\baselineskip}
+}
+
+\DeclareBibliographyDriver{thesis}{%
   \fontsize{9pt}{1em}\bodyfont\color{text}\textbf{%
   \printfield{title}}%
   \newblock%
